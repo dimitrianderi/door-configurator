@@ -1,0 +1,23 @@
+.btn {
+    width: 50%;
+}
+
+.btn-primary {
+    background-color: var(--att-text);
+    border-color: var(--att-text);
+    opacity: 1;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--att-text-hard) !important;
+    border-color: var(--att-text-hard) !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:disabled {
+    background-color: var(--background-hard) !important;
+    border-color: var(--background-light) !important;
+    opacity: 0;
+}

@@ -1,0 +1,66 @@
+.main__doors {
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.main__doors-item {
+    width: 225px;
+    height: 375px;
+    position: relative;
+    background-color: var(--background-hard);
+    border: 5px solid transparent;
+    position: relative;
+}
+
+#door1::before,
+#door2::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    content: "Вид снаружи";
+    width: 100%;
+    text-align: center;
+    color: var(--att-text);
+}
+
+#door2::before {
+    content: "Вид изнутри";
+    user-select: text !important;
+}
+
+.main__doors-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 5px;
+    border: 1px solid var(--background-hard);
+}
+
+@media (max-width: 1200px) {
+    .main__doors {
+        width: 65%;
+    }
+}
+
+@media (max-width: 968px) {
+    .main__doors {
+        width: 100%;
+        min-height: 375px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__doors {
+        min-height: 187px;
+    }
+    .main__doors-item {
+        width: 112px;
+        height: 187px;
+    }
+}

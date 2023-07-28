@@ -1,0 +1,19 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label::before {
+    content: "\2714";
+    display: inline-block;
+    margin-right: 5px;
+    color: var(--att-text);
+}
+
+input[type="checkbox"]+label::before {
+    content: "\2610";
+}
+
+input[type="checkbox"]:checked+label::before {
+    margin-right: 6px;
+    content: "\2714";
+}

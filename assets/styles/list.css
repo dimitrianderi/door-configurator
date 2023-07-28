@@ -1,0 +1,12 @@
+.main__list {
+    width: 100%;
+}
+
+.main__wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-gap: 30px;
+    padding: 20px;
+}
