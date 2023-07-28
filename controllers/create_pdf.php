@@ -1,8 +1,14 @@
 <?php
 
-
 require './../vendor/autoload.php';
-
+/** @var str $tape_color */
+/** @var str $painting_color */
+/** @var str $handle_color */
+/** @var str $width_door */
+/** @var str $height_door */
+/** @var str $opening */
+/** @var str $accessories */
+/** @var str $sum */
 $pdf = new TCPDF('P', 'mm', 'A4', true, 'UTF-8', false);
 
 $pdf->SetMargins(10, 10, 10, true);

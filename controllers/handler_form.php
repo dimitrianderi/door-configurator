@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     /** @var arr $error_messages */
     require_once __DIR__ . '/validator.php';
+    require_once __DIR__ . '/prepare_config.php';
 
     if (empty($error_messages)) {
         $sql = "INSERT INTO `orders` (painting_color, tape_color, handle_color, width_door, height_door, opening, accessories, sum) 

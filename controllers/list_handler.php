@@ -2,6 +2,7 @@
 
 /** @var PDO $pdo */
 require_once __DIR__ . '/../database/connect.php';
+require_once __DIR__ . '/prepare_config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];

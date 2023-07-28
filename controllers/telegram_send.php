@@ -1,7 +1,9 @@
 <?php
 
-
 require './../vendor/autoload.php';
+/** @var int $id */
+/** @var str $token */
+/** @var str $chat_id */
 
 use TelegramBot\Api\BotApi;
 
@@ -19,10 +21,6 @@ function sendPdfToTelegram($botToken, $chatId, $pdfFilePath, $caption = '')
 
 $pdfFilePath = __DIR__ . '/../assets/path/door_order.pdf';
 
-$botToken = '6603662089:AAEbXRxDepKOtv0Qn6GvrSwARlG5AkwiXQc';
-
-$chatId = '-985732401';
-
 $caption = ($id) ? "Заказ № $id" : 'Заказ двери от ' . date('Y-m-d H:i:s');
 
-sendPdfToTelegram($botToken, $chatId, $pdfFilePath, $caption);
+sendPdfToTelegram($token, $chat_id, $pdfFilePath, $caption);
