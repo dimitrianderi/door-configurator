@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $res = $pdo->prepare("SELECT * FROM `orders` WHERE `id` = ?");
     $res->execute([$id]);
     $order = $res->fetchAll()[0];
-    echo "<pre>" . print_r($order, 1) . "</pre>";
 
     $painting_color = $order['painting_color'];
 
@@ -25,4 +24,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once __DIR__ . '/telegram_send.php';
 }
 
-//header("Location: " . $_SERVER['HTTP_REFERER']);
+header("Location: " . $_SERVER['HTTP_REFERER']);

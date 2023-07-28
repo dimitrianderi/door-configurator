@@ -1,0 +1,6 @@
+{
+    "require": {
+        "telegram-bot/api": "^2.4",
+        "tecnickcom/tcpdf": "^6.6"
+    }
+}
